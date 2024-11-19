@@ -80,18 +80,15 @@ function calculateGoal(tdee) {
 
   const button = document.createElement("button");
   button.id = "dietButton";
-  button.textContent = "VER DIETA";
+  button.textContent = `VER DIETA - ${closestCalories} kcal`;
   button.style.marginTop = "20px";
-  button.style.padding = "15px 30px";
+  button.style.padding = "15px 30px"; // Ajuste o tamanho do botão
+  button.style.fontSize = "18px"; // Aumenta o tamanho do texto
   button.style.backgroundColor = "#4CAF50";
   button.style.color = "white";
   button.style.border = "none";
-  button.style.borderRadius = "8px";
+  button.style.borderRadius = "5px";
   button.style.cursor = "pointer";
-  button.style.fontSize = "18px";
-  button.style.display = "block";
-  button.style.marginLeft = "auto";
-  button.style.marginRight = "auto";
 
   button.onclick = () => {
     window.open(dietLink, "_blank");
@@ -99,3 +96,4 @@ function calculateGoal(tdee) {
 
   document.querySelector(".container").appendChild(button);
 }
+
