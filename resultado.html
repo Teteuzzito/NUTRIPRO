@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resultado</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Seu Gasto Calórico Diário</h2>
+    <div id="caloricExpenditure"></div>
+
+    <h3>Escolha seu objetivo:</h3>
+    <select id="goal">
+      <option value="emagrecer">Emagrecer</option>
+      <option value="manter">Manter Peso</option>
+      <option value="ganhar">Ganhar Peso</option>
+    </select>
+
+    <button onclick="calculateGoal()">Ver Dieta</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

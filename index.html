@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de Dieta</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <img src="assets/logo.png" alt="Logo Calculadora de Dieta" class="logo">
+        <form id="calorieForm">
+            <label for="age">Idade:</label>
+            <input type="number" id="age" name="age" required>
+
+            <label for="weight">Peso (kg):</label>
+            <input type="number" id="weight" name="weight" required>
+
+            <label for="height">Altura (cm):</label>
+            <input type="number" id="height" name="height" required>
+
+            <label for="sex">Sexo:</label>
+            <select id="sex" name="sex" required>
+                <option value="masculino">Masculino</option>
+                <option value="feminino">Feminino</option>
+            </select>
+
+            <label for="activityLevel">Nível de Atividade:</label>
+            <select id="activityLevel" name="activityLevel" required>
+                <option value="1.2">Sedentário</option>
+                <option value="1.375">Levemente ativo</option>
+                <option value="1.55">Moderadamente ativo</option>
+                <option value="1.725">Muito ativo</option>
+                <option value="1.9">Extremamente ativo</option>
+            </select>
+
+            <label for="goal">Objetivo:</label>
+            <select id="goal" name="goal" required>
+                <option value="emagrecer">Emagrecer</option>
+                <option value="manter">Manter</option>
+                <option value="ganhar">Ganhar</option>
+            </select>
+
+            <button type="button" onclick="calculateCaloricExpenditure()">Calcular</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
